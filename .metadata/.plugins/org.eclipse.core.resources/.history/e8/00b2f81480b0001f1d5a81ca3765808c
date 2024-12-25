@@ -1,0 +1,7 @@
+package com.ganesh.app.entity;
+
+public class HospitalEntity {
+private Integer h_id;
+private String hospital_name;
+private String 
+}

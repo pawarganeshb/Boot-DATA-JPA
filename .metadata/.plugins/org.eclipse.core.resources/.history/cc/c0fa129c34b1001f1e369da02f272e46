@@ -1,0 +1,11 @@
+package com.ganesh.app.repo;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ganesh.app.entity.CallerTuneEntity;
+
+public interface ICallerTuneRepo extends JpaRepository<CallerTuneEntity, Integer> {
+	public List<CallerTuneEntity> getCallerTunes();
+}

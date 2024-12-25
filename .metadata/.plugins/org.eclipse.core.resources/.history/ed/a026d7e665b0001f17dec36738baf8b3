@@ -1,0 +1,25 @@
+package com.ganesh.app.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.object.StoredProcedure;
+import org.springframework.stereotype.Service;
+
+import com.ganesh.app.entity.CustomerEntity;
+
+import jakarta.persistence.EntityManager;
+
+@Service("customerService")
+public class CustomerServiceImp implements ICustomerService {
+	
+	@Autowired
+	private EntityManager entityManager;
+
+	@Override
+	public List<CustomerEntity> getCustomerInRange(double startRange, double endRange) {
+StoredProcedure procedure = entityManager.cre
+		return null;
+	}
+
+}

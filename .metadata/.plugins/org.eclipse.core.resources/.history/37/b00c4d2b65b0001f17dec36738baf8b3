@@ -1,0 +1,8 @@
+package com.ganesh.app;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public interface ICustomerService {
+ @Autowired
+ 
+}

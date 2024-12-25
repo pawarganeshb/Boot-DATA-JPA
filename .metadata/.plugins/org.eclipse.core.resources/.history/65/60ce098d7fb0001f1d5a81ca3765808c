@@ -1,0 +1,9 @@
+spring.application.name=Boot-12-Data-JPA-Calling-PL_SQL
+#MYSQL
+spring.datasource.url=jdbc:mysql:///company
+spring.datasource.username=root
+spring.datasource.password=root
+
+
+# JPA & Hibernate Properties
+s

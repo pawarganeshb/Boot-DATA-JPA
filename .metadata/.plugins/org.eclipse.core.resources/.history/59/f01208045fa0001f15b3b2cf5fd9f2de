@@ -1,0 +1,8 @@
+package com.ganesh.service;
+
+import com.ganesh.repository.ICustomerRepository;
+
+public interface ICustomerService {
+@Autowired
+private ICustomerRepository repo;
+}

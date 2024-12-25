@@ -1,0 +1,8 @@
+package com.ganesh.app.service;
+
+import com.ganesh.app.repo.IEmprepo;
+
+public interface IEmpService {
+	
+	public IEmprepo emprepo;
+}

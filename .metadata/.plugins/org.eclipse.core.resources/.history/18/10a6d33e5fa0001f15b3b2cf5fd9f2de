@@ -1,0 +1,11 @@
+package com.ganesh.service;
+
+public class CustoemrServiceImp implements ICustomerService {
+
+	@Override
+	public String registerCustomer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

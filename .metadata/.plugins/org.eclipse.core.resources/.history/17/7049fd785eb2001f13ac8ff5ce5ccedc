@@ -1,0 +1,10 @@
+package com.ganesh.app.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "phone_numbers")
+public class PhoneNumber {
+
+}

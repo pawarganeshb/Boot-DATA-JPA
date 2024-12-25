@@ -1,0 +1,8 @@
+package com.ganesh.app.service;
+
+import com.ganesh.app.entity.CallerTuneEntity;
+
+public interface ICallerTuneService {
+	public String saveCallerTune(CallerTuneEntity callerTuneEntity);
+	public St
+}

@@ -1,0 +1,20 @@
+package com.ganesh.app.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Data;
+import lombok.NonNull;
+
+@Entity
+@Table(name="matrimony")
+@Data
+public class MatrimonyEntity {
+	private Long id;
+	@NonNull
+	@NonNull
+	private String name;
+	@NonNull
+	private Boolean isIndian;
+	
+
+}

@@ -1,0 +1,13 @@
+package com.ganesh.app.repo;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.ganesh.app.entity.CallerTuneEntity;
+
+public interface ICallerTuneRepo extends JpaRepository<CallerTuneEntity, Integer> {
+	@Query("select caller")
+	public List<CallerTuneEntity> getCallerTunes();
+}

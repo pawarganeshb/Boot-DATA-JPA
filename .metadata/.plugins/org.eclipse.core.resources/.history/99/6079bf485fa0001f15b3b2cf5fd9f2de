@@ -1,0 +1,17 @@
+package com.ganesh.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ganesh.repository.ICustomerRepository;
+
+public class CustoemrServiceImp implements ICustomerService {
+	
+	@Autowired
+	private ICustomerRepository repo;
+	
+	@Override
+	public String registerCustomer() {
+		return null;
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.ganesh.app.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ganesh.app.entity.HospitalEntity;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.StoredProcedureQuery;
+
+public final class HospitalServiceImp implements IHsospitalService {
+	
+	@Autowired
+	private EntityManager entityManager;
+
+	@Override
+	public List<HospitalEntity> getAllRecord() {
+      StoredProcedureQuery storedProcedureQuery = entityManager.createStoredProcedureQuery("getRecords", HospitalEntity.class);
+      storedProcedureQuery.getResultList();
+		return null;
+	}
+
+}

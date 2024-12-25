@@ -1,0 +1,31 @@
+package com.ganesh.app.entity;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "p_numbers")
+@Setter
+@Getter
+@AllArgsConstructor
+@RequiredArgsConstructor
+public class PhoneNumbers {
+	private Integer regNo;
+	@NonNull
+	private Long mobileNo;
+	@NonNull
+	private String provider;
+	@NonNull
+	private String numberType;
+	@ManyToOne(targetEntity = Person.class,cascade = CascadeType.ALL)
+	@JoinColumn(name = "person_id", referencedColumnName = "pid")
+	private Person person;
+}

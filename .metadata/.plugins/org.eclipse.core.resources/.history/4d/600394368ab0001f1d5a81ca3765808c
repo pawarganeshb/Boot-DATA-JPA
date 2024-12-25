@@ -1,0 +1,2 @@
+spring.application.name=Boot-13-Data-JPA-Inset-Date-Time
+spring.datasource.url=

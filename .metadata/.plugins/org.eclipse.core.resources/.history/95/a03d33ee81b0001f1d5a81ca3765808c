@@ -1,0 +1,15 @@
+package com.ganesh.app.service;
+
+import java.util.List;
+
+import com.ganesh.app.entity.HospitalEntity;
+
+public final class HospitalServiceImp implements IHsospitalService {
+
+	@Override
+	public List<HospitalEntity> getAllRecord() {
+		
+		return null;
+	}
+
+}

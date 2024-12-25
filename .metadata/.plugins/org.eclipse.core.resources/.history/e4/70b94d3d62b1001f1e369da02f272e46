@@ -1,0 +1,13 @@
+package com.ganesh.app.service;
+
+import com.ganesh.app.entity.MatrimonyEntity;
+
+public class MatrimonyServiceImp implements IMatrimonyService {
+
+	@Override
+	public String register(MatrimonyEntity entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

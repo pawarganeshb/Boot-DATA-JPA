@@ -1,0 +1,35 @@
+package com.ganesh.app;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MappingCount {
+
+	public static void main(String[] args) {
+		System.out.println("result is :: ");
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(1);
+		list.add(2);
+		list.add(1);
+		list.add(3);
+		list.add(3);
+		list.add(7);
+
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+		for (int i = 0; i < list.size(); i++) {
+			Integer key = list.get(i);
+			Integer count = map.get(key); // Get the current count
+			if (count == null) { // If the key is not present in the map
+				count = 0; // Initialize count to 0
+			}
+			count++; // Increment count
+			map.put(key, count); // Update the map with the new count
+		}
+
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			System.out.println(entry.getKey() + "->" + entry.getValue());
+		}
+	}
+}

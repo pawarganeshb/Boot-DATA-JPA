@@ -1,0 +1,38 @@
+package com.ganesh.app.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ganesh.app.entity.CallerTuneEntity;
+import com.ganesh.app.repo.ICallerTuneRepo;
+
+@Service
+public class CallerTuneServiceImple implements ICallerTuneService {
+	@Autowired
+	private ICallerTuneRepo callerTuneRepo;
+
+	@Override
+	public String saveCallerTune(CallerTuneEntity callerTuneEntity) {
+		Integer id = callerTuneRepo.save(callerTuneEntity).getId();
+		return id + " is registerd successfully!";
+	}
+
+	@Override
+	public String updateCallerTune(Integer id, String tuneName, String movieName) {
+		Optional<CallerTuneEntity> optional = callerTuneRepo.findById(id);
+		if (optional.isPresent()) {
+			/*			CallerTuneEntity callerTuneEntity = new CallerTuneEntity();
+						callerTuneEntity.setTuneName(tuneName);
+						callerTuneEntity.setTuneName(movieName);
+						callerTuneRepo.save(callerTuneEntity);*/
+
+			optional
+			
+			return id + " is updated!";
+		}
+		return "Unable to update!";
+	}
+
+}

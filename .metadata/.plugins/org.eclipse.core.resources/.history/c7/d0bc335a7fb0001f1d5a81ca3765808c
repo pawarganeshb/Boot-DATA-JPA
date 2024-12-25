@@ -1,0 +1,3 @@
+spring.application.name=Boot-12-Data-JPA-Calling-PL_SQL
+#MYSQL
+spring.datasource.url=

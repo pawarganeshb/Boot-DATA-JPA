@@ -1,0 +1,12 @@
+package com.ganesh.app.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ganesh.app.repo.IUserRepo;
+
+@Service
+public class UserServiceImple {
+	@Autowired
+	private IUserRepo userRepo;
+}

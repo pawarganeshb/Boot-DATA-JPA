@@ -1,0 +1,5 @@
+package com.ganesh.app.service;
+
+public final class HospitalServiceImp implements IH{
+
+}

@@ -1,0 +1,21 @@
+package com.ganesh.app;
+
+import java.util.ArrayList;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Boot16DataJpaAssociationMappingApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Boot16DataJpaAssociationMappingApplication.class, args);
+		ArrayList<Integer>list = new ArrayList<Integer>();
+		list.add(1);
+		list.add(2);
+		list.add(1);
+		list.add(3);
+		list.add(3);
+		list.add(7);
+
+}

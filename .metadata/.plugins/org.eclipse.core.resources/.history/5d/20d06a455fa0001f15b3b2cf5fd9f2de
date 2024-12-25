@@ -1,0 +1,13 @@
+package com.ganesh.service;
+
+import com.ganesh.repository.ICustomerRepository;
+
+public class CustoemrServiceImp implements ICustomerService {
+	@
+	private ICustomerRepository repo;
+	@Override
+	public String registerCustomer() {
+		return null;
+	}
+
+}

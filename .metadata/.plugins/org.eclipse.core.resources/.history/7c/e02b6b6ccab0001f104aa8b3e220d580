@@ -1,0 +1,26 @@
+package com.ganesh.app.entity;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Version;
+
+@Entity
+@Table(name = "caller_tune")
+public class CallerTuneEntity {
+	private Integer id;
+	@Notnull
+	private String tuneName;
+	private String movieName;
+	@Version
+	private Integer updateCount;
+	@CreationTimestamp
+	private LocalDateTime dateTime;
+	@UpdateTimestamp
+	private LocalDate lastlyUpdateOn;
+}
