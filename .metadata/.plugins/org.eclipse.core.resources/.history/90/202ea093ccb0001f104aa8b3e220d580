@@ -1,5 +1,0 @@
-package com.ganesh.app.service;
-
-public interface ICallerTuneService {
-public String 
-}

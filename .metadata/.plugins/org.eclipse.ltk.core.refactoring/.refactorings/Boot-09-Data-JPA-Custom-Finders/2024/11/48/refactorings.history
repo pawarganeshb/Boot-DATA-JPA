@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;CustomerEntity.java&apos; to &apos;Boot-10-Data-JPA-Query-Finder/src/main/java/com.ganesh.app.entity&apos;&#x0D;&#x0A;- Original project: &apos;Boot-09-Data-JPA-Custom-Finders&apos;&#x0D;&#x0A;- Destination element: &apos;Boot-10-Data-JPA-Query-Finder/src/main/java/com.ganesh.app.entity&apos;&#x0D;&#x0A;- Original element: &apos;com.ganesh.app.entity.CustomerEntity.java&apos;" description="Copy compilation unit" destination="=Boot-10-Data-JPA-Query-Finder/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ganesh.app.entity" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ganesh.app.entity{CustomerEntity.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1732772866637" units="1" version="1.0"/>
-</session>

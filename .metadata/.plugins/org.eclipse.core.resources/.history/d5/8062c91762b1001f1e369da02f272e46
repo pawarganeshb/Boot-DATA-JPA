@@ -1,5 +1,0 @@
-package com.ganesh.app.service;
-
-public interface IMatrimonyService {
-public String register
-}

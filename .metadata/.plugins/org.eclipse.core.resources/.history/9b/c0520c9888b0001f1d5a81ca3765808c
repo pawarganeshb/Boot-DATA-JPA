@@ -1,9 +1,0 @@
-package com.ganesh.app.service;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.ganesh.app.repo.IEmprepo;
-
-public interface IEmpService {
-	
-}

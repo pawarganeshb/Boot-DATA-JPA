@@ -1,5 +1,0 @@
-package com.ganesh.service;
-
-public interface ICustomerService {
-	public String registerCustomer(Custoemr);
-}
